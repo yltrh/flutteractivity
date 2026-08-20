@@ -87,10 +87,6 @@ class MyProfile extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text('Show'),
-                      ),
                     ],
                   ),
                   _buildInfoRow(Icons.book, 'Favorite Subject', 'Mobile App Dev'),
