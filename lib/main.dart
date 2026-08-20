@@ -70,6 +70,7 @@ class MyProfile extends StatelessWidget {
                   const SizedBox(height: 20),
                   _buildInfoRow(Icons.face, 'Nickname', 'Hartley'),
                   _buildInfoRow(Icons.cake, 'Birthday', 'March 27, 2006'),
+                  _buildInfoRow(Icons.candlestick_chart, 'Age', '20'),
                   _buildInfoRow(Icons.location_on, 'Address', 'Cabuyao City'),
                   _buildInfoRow(Icons.directions_run, 'Hobby', 'Running'),
                   _buildInfoRow(Icons.school, 'Course', 'BS Information Technology'),
