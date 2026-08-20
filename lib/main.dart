@@ -25,7 +25,7 @@ class MyProfile extends StatelessWidget {
       appBar: AppBar(
         title: const Text('My Profile'),
         centerTitle: true,
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.black,
         foregroundColor: Colors.white,
       ),
       body: Padding(
@@ -43,7 +43,7 @@ class MyProfile extends StatelessWidget {
                 children: [
                   const CircleAvatar(
                     radius: 60,
-                    backgroundColor: Colors.indigo,
+                    backgroundColor: Colors.grey,
                     child: Icon(
                       Icons.person,
                       size: 70,
@@ -56,6 +56,7 @@ class MyProfile extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
+                      color: Colors.black,
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -85,12 +86,13 @@ class MyProfile extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
+                          color: Colors.black,
                         ),
                       ),
                     ],
                   ),
-                  _buildInfoRow(Icons.book, 'Favorite Subject', 'Mobile App Dev'),
-                  _buildInfoRow(Icons.code, 'Programming', 'Dart'),
+                  _buildInfoRow(Icons.book, 'Favorite Subject', 'Mobile Application Development'),
+                  _buildInfoRow(Icons.code, 'Programming Language', 'Dart'),
                   _buildInfoRow(Icons.work, 'Career Goal', 'Lotto Winner'),
                   const SizedBox(height: 16),
                   ElevatedButton.icon(
@@ -104,6 +106,10 @@ class MyProfile extends StatelessWidget {
                     },
                     icon: const Icon(Icons.waving_hand),
                     label: const Text('Say Hello'),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.black,
+                      foregroundColor: Colors.white,
+                    ),
                   ),
                 ],
               ),
@@ -119,18 +125,22 @@ class MyProfile extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 6.0),
       child: Row(
         children: [
-          Icon(icon, size: 20, color: Colors.indigo),
+          Icon(icon, size: 20, color: Colors.black),
           const SizedBox(width: 12),
           Text(
             '$label: ',
             style: const TextStyle(
               fontWeight: FontWeight.w600,
               fontSize: 14,
+              color: Colors.black,
             ),
           ),
           Text(
             value,
-            style: const TextStyle(fontSize: 14),
+            style: const TextStyle(
+              fontSize: 14,
+              color: Colors.black,
+            ),
           ),
         ],
       ),
